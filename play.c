@@ -285,6 +285,7 @@ struct boat* init_Boat(int x, int y, struct grid* gridde) {
         int ori = -1;
 
         do {
+            display_your_tab(gridde , tab_size , tab_size);
             printf("Choose your orientation: 1 for vertical | 2 for horizontal\n");
             while (scanf("%d", &ori) != 1 || (ori != 1 && ori != 2) || getchar() != '\n') {
                 clearInputBuffer();

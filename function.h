@@ -1,11 +1,13 @@
 
-
-
 /**
  * @file function.h
  * @brief This file prototypes of the game  and all the comment faire the functions
  * @Author Lucas Bezamat
- */#ifndef FUNCTION_H
+ */
+#ifndef FUNCTION_H
+
+
+
 #define FUNCTION_H
 
 #include <stdio.h>
@@ -84,7 +86,7 @@ struct grid {
 struct jeu {
     struct boat*  boate;
     struct grid*  gridd;
-};q
+};
 
 int isVictory(struct grid* gridde, int x, int y );
 int** init_board(int x, int y);
