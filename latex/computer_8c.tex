@@ -1,0 +1,74 @@
+\doxysection{computer.\+c File Reference}
+\hypertarget{computer_8c}{}\label{computer_8c}\index{computer.c@{computer.c}}
+{\ttfamily \#include "{}function.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{computer_8c_a457e853d3a6132e2bbcc7f93e6f86b92}{init\+\_\+\+Boat\+\_\+ordi}} (int x, int y, struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde)
+\begin{DoxyCompactList}\small\item\em Represents the computer\textquotesingle{}s action of shooting at the player\textquotesingle{}s grid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{computer_8c_addceef65115ccc8bc375cfae8029f853}{shoot\+\_\+ordi}} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde, int x, int y)
+\begin{DoxyCompactList}\small\item\em Make the computer in a grid. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{computer_8c_adaec144e803bf256186921b2a8069f7c}{iscollision\+\_\+ordi}} (struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boatt, struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde)
+\begin{DoxyCompactList}\small\item\em Tell if there is a collision ( without printf for user experience ) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+computer fonctions @\+Author Lucas Bezamat 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{computer_8c_a457e853d3a6132e2bbcc7f93e6f86b92}\label{computer_8c_a457e853d3a6132e2bbcc7f93e6f86b92} 
+\index{computer.c@{computer.c}!init\_Boat\_ordi@{init\_Boat\_ordi}}
+\index{init\_Boat\_ordi@{init\_Boat\_ordi}!computer.c@{computer.c}}
+\doxysubsubsection{\texorpdfstring{init\_Boat\_ordi()}{init\_Boat\_ordi()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*} init\+\_\+\+Boat\+\_\+ordi (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde }\end{DoxyParamCaption})}
+
+
+
+Represents the computer\textquotesingle{}s action of shooting at the player\textquotesingle{}s grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gridde} & A pointer to the player\textquotesingle{}s game grid. \\
+\hline
+{\em x} & The x dimension of the player\textquotesingle{}s game grid. \\
+\hline
+{\em y} & The y dimension of the player\textquotesingle{}s game grid.\\
+\hline
+\end{DoxyParams}
+This function allows the computer to randomly choose a cell in the player\textquotesingle{}s grid to shoot at, marking it appropriately. \Hypertarget{computer_8c_adaec144e803bf256186921b2a8069f7c}\label{computer_8c_adaec144e803bf256186921b2a8069f7c} 
+\index{computer.c@{computer.c}!iscollision\_ordi@{iscollision\_ordi}}
+\index{iscollision\_ordi@{iscollision\_ordi}!computer.c@{computer.c}}
+\doxysubsubsection{\texorpdfstring{iscollision\_ordi()}{iscollision\_ordi()}}
+{\footnotesize\ttfamily int iscollision\+\_\+ordi (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}}]{boatt,  }\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde }\end{DoxyParamCaption})}
+
+
+
+Tell if there is a collision ( without printf for user experience ) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gridde} & A pointer to the player\textquotesingle{}s game grid. \\
+\hline
+{\em boatt} & boatt A pointer to the player\textquotesingle{}s boatts list.\\
+\hline
+\end{DoxyParams}
+permits to the computze to put well its piece \Hypertarget{computer_8c_addceef65115ccc8bc375cfae8029f853}\label{computer_8c_addceef65115ccc8bc375cfae8029f853} 
+\index{computer.c@{computer.c}!shoot\_ordi@{shoot\_ordi}}
+\index{shoot\_ordi@{shoot\_ordi}!computer.c@{computer.c}}
+\doxysubsubsection{\texorpdfstring{shoot\_ordi()}{shoot\_ordi()}}
+{\footnotesize\ttfamily void shoot\+\_\+ordi (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Make the computer in a grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gridde} & A pointer to the player\textquotesingle{}s game grid. \\
+\hline
+{\em x} & The x dimension of the player\textquotesingle{}s game grid. \\
+\hline
+{\em y} & The y dimension of the player\textquotesingle{}s game grid.\\
+\hline
+\end{DoxyParams}
+this function make the computer dont shoot at the same place that it shoots before 

@@ -1,0 +1,73 @@
+\doxysection{function.\+h}
+\hypertarget{function_8h_source}{}\label{function_8h_source}\mbox{\hyperlink{function_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ }
+\#ifndef FUNCTION\_H\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ FUNCTION\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <time.h>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{comment}{//\ Color\ definitions\ for\ console\ output}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ ANSI\_COLOR\_RESET\ \ \ "{}\(\backslash\)x1b[0m"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ ANSI\_COLOR\_RED\ \ \ \ \ "{}\(\backslash\)x1b[31m"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ ANSI\_COLOR\_GREEN\ \ \ "{}\(\backslash\)x1b[32m"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ ANSI\_COLOR\_YELLOW\ \ "{}\(\backslash\)x1b[33m"{}}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{//\ Game-\/specific\ definitions}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ nb\_Boat\ 5\ }}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ tab\_size\ 10\ }}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{function_8h_a06fc87d81c62e9abb8790b6e5713c55ba9ac7d5e5851d7a2bc186a1c3341589f6}{WATER}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{function_8h_a06fc87d81c62e9abb8790b6e5713c55bae8af2ae3ffe833ed5371a22f29a0646b}{WATER\_SHOT}},\ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{function_8h_a06fc87d81c62e9abb8790b6e5713c55ba5fcfdc36f4798fb6ace9348a10f1e1b3}{BOAT}},\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{function_8h_a06fc87d81c62e9abb8790b6e5713c55ba6589b5d605e0a15fa3323937132bfa61}{WRECK}}\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00061\ \textcolor{comment}{//\ Function\ prototypes\ with\ brief\ descriptions}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00070\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structboat}{boat}}\ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{int}\ size\_b;}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{int}\ orientation;\ \textcolor{comment}{//\ 1\ means\ vertical\ 0\ horizontal\ }}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{int}\ x;}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{int}\ y;}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structboat}{boat}}*\ next;}
+\DoxyCodeLine{00076\ \};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structgrid}{grid}}\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{int}**\ board;}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{int}\ x;}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{int}\ y;}
+\DoxyCodeLine{00082\ \};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structjeu}{jeu}}\ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structboat}{boat}}*\ \ boate;}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structgrid}{grid}}*\ \ gridd;}
+\DoxyCodeLine{00087\ \};q}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{keywordtype}{int}\ isVictory(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ gridde,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y\ );}
+\DoxyCodeLine{00090\ \textcolor{keywordtype}{int}**\ init\_board(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00091\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{function_8h_a35088d9e5a1e54a5cb136a124c9fef49}{display\_tab}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ gridde,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00092\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{function_8h_a6638267d9b0be9278fa1db17075fc244}{display\_your\_tab}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ gridde,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);\ }
+\DoxyCodeLine{00093\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{function_8h_a4cd598d8595dc90e0bf2e6ec24b9f2dc}{shoot}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ gridde\ ,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00094\ \textcolor{keywordtype}{void}\ shoott(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ gridde,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00095\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{function_8h_ae9ce9e2b9b0e3ef9a9e3256a73cf5d9a}{see\_winner}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ gridde,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00096\ \textcolor{keywordtype}{void}\ free\_grid(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ board);}
+\DoxyCodeLine{00097\ \textcolor{keywordtype}{int}\ iscollision(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structboat}{boat}}*\ boatt,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ gridde);}
+\DoxyCodeLine{00098\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{function_8h_adaec144e803bf256186921b2a8069f7c}{iscollision\_ordi}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structboat}{boat}}*\ boatt,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ gridde);}
+\DoxyCodeLine{00099\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structgrid}{grid}}*\ \mbox{\hyperlink{function_8h_a9210d364a791c60eff2e9e012a6d64e1}{put\_In}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structboat}{boat}}*\ boatt,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ gridde);}
+\DoxyCodeLine{00100\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{function_8h_a5177aa67213841744dc665d8098e987b}{display\_boat}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structboat}{boat}}*\ boatt);}
+\DoxyCodeLine{00101\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{function_8h_a3d62ac1d41fa2ebffbac1aad22f7aa7d}{free\_boats}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structboat}{boat}}*\ boatt);}
+\DoxyCodeLine{00102\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{function_8h_acd05d28250a469871b95cee8412ad55a}{display\_alive}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structboat}{boat}}*\ boat1,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ board1);}
+\DoxyCodeLine{00103\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{function_8h_abdbc59fbbde3991fed5406434e2efa55}{choosetoseewreck}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structboat}{boat}}*\ boat1,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ board1);}
+\DoxyCodeLine{00104\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{function_8h_a988b2c80dc83f2e3c76e84a8a9b2313a}{menu\_global}}();}
+\DoxyCodeLine{00105\ \textcolor{keywordtype}{void}\ free\_memory(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ board,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structboat}{boat}}*\ boats);}
+\DoxyCodeLine{00106\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{function_8h_addceef65115ccc8bc375cfae8029f853}{shoot\_ordi}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ gridde,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00107\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structboat}{boat}}*\ \mbox{\hyperlink{function_8h_abd9967f03aabbbfe8ac6edcf0dacdfef}{init\_Boat}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ gridde)\ ;}
+\DoxyCodeLine{00108\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structboat}{boat}}*\ \mbox{\hyperlink{function_8h_a457e853d3a6132e2bbcc7f93e6f86b92}{init\_Boat\_ordi}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structgrid}{grid}}*\ gridde);}
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

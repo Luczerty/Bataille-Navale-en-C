@@ -1,0 +1,282 @@
+\doxysection{function.\+h File Reference}
+\hypertarget{function_8h}{}\label{function_8h}\index{function.h@{function.h}}
+
+
+This file prototypes of the game and all the comment faire the functions @\+Author Lucas Bezamat.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structboat}{boat}}
+\begin{DoxyCompactList}\small\item\em Checks if all boats on the grid have been sunk. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structgrid}{grid}}
+\begin{DoxyCompactList}\small\item\em Represents the game grid. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structjeu}{jeu}}
+\begin{DoxyCompactList}\small\item\em Represents the game state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{function_8h_a92a364c2b863dde1a024a77eac2a5b3b}\label{function_8h_a92a364c2b863dde1a024a77eac2a5b3b} 
+\#define {\bfseries ANSI\+\_\+\+COLOR\+\_\+\+RESET}~"{}\textbackslash{}x1b\mbox{[}0m"{}
+\item 
+\Hypertarget{function_8h_a34995b955465f6bbb37c359173d50477}\label{function_8h_a34995b955465f6bbb37c359173d50477} 
+\#define {\bfseries ANSI\+\_\+\+COLOR\+\_\+\+RED}~"{}\textbackslash{}x1b\mbox{[}31m"{}
+\item 
+\Hypertarget{function_8h_a966c72d8d733c7734c6c784753d894c7}\label{function_8h_a966c72d8d733c7734c6c784753d894c7} 
+\#define {\bfseries ANSI\+\_\+\+COLOR\+\_\+\+GREEN}~"{}\textbackslash{}x1b\mbox{[}32m"{}
+\item 
+\Hypertarget{function_8h_a5a123b382640b3aa65dd5db386002fbc}\label{function_8h_a5a123b382640b3aa65dd5db386002fbc} 
+\#define {\bfseries ANSI\+\_\+\+COLOR\+\_\+\+YELLOW}~"{}\textbackslash{}x1b\mbox{[}33m"{}
+\item 
+\Hypertarget{function_8h_a052cdbc0996fbc032fb27507203cd652}\label{function_8h_a052cdbc0996fbc032fb27507203cd652} 
+\#define {\bfseries nb\+\_\+\+Boat}~5
+\item 
+\Hypertarget{function_8h_a345958bec3164ee303d9a5b753af45ab}\label{function_8h_a345958bec3164ee303d9a5b753af45ab} 
+\#define {\bfseries tab\+\_\+size}~10
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{function_8h_a06fc87d81c62e9abb8790b6e5713c55ba9ac7d5e5851d7a2bc186a1c3341589f6}{WATER}}
+, \mbox{\hyperlink{function_8h_a06fc87d81c62e9abb8790b6e5713c55bae8af2ae3ffe833ed5371a22f29a0646b}{WATER\+\_\+\+SHOT}}
+, \mbox{\hyperlink{function_8h_a06fc87d81c62e9abb8790b6e5713c55ba5fcfdc36f4798fb6ace9348a10f1e1b3}{BOAT}}
+, \mbox{\hyperlink{function_8h_a06fc87d81c62e9abb8790b6e5713c55ba6589b5d605e0a15fa3323937132bfa61}{WRECK}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{function_8h_abc5d45865e4ee5c1736b08421ec2ae7a}\label{function_8h_abc5d45865e4ee5c1736b08421ec2ae7a} 
+q int {\bfseries is\+Victory} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde, int x, int y)
+\item 
+\Hypertarget{function_8h_a6f52ea7b6984181a6490b8f57209d99a}\label{function_8h_a6f52ea7b6984181a6490b8f57209d99a} 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+board} (int x, int y)
+\item 
+void \mbox{\hyperlink{function_8h_a35088d9e5a1e54a5cb136a124c9fef49}{display\+\_\+tab}} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde, int x, int y)
+\begin{DoxyCompactList}\small\item\em the display tab function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{function_8h_a6638267d9b0be9278fa1db17075fc244}{display\+\_\+your\+\_\+tab}} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde, int x, int y)
+\begin{DoxyCompactList}\small\item\em the display your tab function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{function_8h_a4cd598d8595dc90e0bf2e6ec24b9f2dc}{shoot}} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde, int x, int y)
+\begin{DoxyCompactList}\small\item\em the shoot function \end{DoxyCompactList}\item 
+\Hypertarget{function_8h_a0b408b9e3904a50103358af6ac9daae8}\label{function_8h_a0b408b9e3904a50103358af6ac9daae8} 
+void {\bfseries shoott} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde, int x, int y)
+\item 
+int \mbox{\hyperlink{function_8h_ae9ce9e2b9b0e3ef9a9e3256a73cf5d9a}{see\+\_\+winner}} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde, int x, int y)
+\begin{DoxyCompactList}\small\item\em the winner function \end{DoxyCompactList}\item 
+\Hypertarget{function_8h_aa85c234c4baee98f22a86f1bcfefe775}\label{function_8h_aa85c234c4baee98f22a86f1bcfefe775} 
+void {\bfseries free\+\_\+grid} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}board)
+\item 
+\Hypertarget{function_8h_abf8a4d1584b097c34ef8f18ed14dd04a}\label{function_8h_abf8a4d1584b097c34ef8f18ed14dd04a} 
+int {\bfseries iscollision} (struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boatt, struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde)
+\item 
+int \mbox{\hyperlink{function_8h_adaec144e803bf256186921b2a8069f7c}{iscollision\+\_\+ordi}} (struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boatt, struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde)
+\begin{DoxyCompactList}\small\item\em Tell if there is a collision ( without printf for user experience ) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{function_8h_a9210d364a791c60eff2e9e012a6d64e1}{put\+\_\+\+In}} (struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boatt, struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde)
+\begin{DoxyCompactList}\small\item\em the put in function \end{DoxyCompactList}\item 
+\Hypertarget{function_8h_a5177aa67213841744dc665d8098e987b}\label{function_8h_a5177aa67213841744dc665d8098e987b} 
+void {\bfseries display\+\_\+boat} (struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boatt)
+\begin{DoxyCompactList}\small\item\em display a list formatted of your boats this function help me to see the problems \end{DoxyCompactList}\item 
+\Hypertarget{function_8h_a3d62ac1d41fa2ebffbac1aad22f7aa7d}\label{function_8h_a3d62ac1d41fa2ebffbac1aad22f7aa7d} 
+void {\bfseries free\+\_\+boats} (struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boatt)
+\begin{DoxyCompactList}\small\item\em function that permit to secure the memory \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{function_8h_acd05d28250a469871b95cee8412ad55a}{display\+\_\+alive}} (struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boat1, struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}board1)
+\begin{DoxyCompactList}\small\item\em the display alive function \end{DoxyCompactList}\item 
+\Hypertarget{function_8h_abdbc59fbbde3991fed5406434e2efa55}\label{function_8h_abdbc59fbbde3991fed5406434e2efa55} 
+void {\bfseries choosetoseewreck} (struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boat1, struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}board1)
+\begin{DoxyCompactList}\small\item\em tthis is the menu to see if a bot is wreck \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{function_8h_a988b2c80dc83f2e3c76e84a8a9b2313a}{menu\+\_\+global}} ()
+\begin{DoxyCompactList}\small\item\em The global menu for the game. \end{DoxyCompactList}\item 
+\Hypertarget{function_8h_ae0f509750b649d6a4b242c18a65f763d}\label{function_8h_ae0f509750b649d6a4b242c18a65f763d} 
+void {\bfseries free\+\_\+memory} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}board, struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boats)
+\item 
+void \mbox{\hyperlink{function_8h_addceef65115ccc8bc375cfae8029f853}{shoot\+\_\+ordi}} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde, int x, int y)
+\begin{DoxyCompactList}\small\item\em Make the computer in a grid. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{function_8h_abd9967f03aabbbfe8ac6edcf0dacdfef}{init\+\_\+\+Boat}} (int x, int y, struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde)
+\begin{DoxyCompactList}\small\item\em help the user to initialize his boat and put it on his grid \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{function_8h_a457e853d3a6132e2bbcc7f93e6f86b92}{init\+\_\+\+Boat\+\_\+ordi}} (int x, int y, struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde)
+\begin{DoxyCompactList}\small\item\em Represents the computer\textquotesingle{}s action of shooting at the player\textquotesingle{}s grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file prototypes of the game and all the comment faire the functions @\+Author Lucas Bezamat. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{function_8h_a06fc87d81c62e9abb8790b6e5713c55b}\label{function_8h_a06fc87d81c62e9abb8790b6e5713c55b} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WATER@{WATER}!function.h@{function.h}}\index{function.h@{function.h}!WATER@{WATER}}}\Hypertarget{function_8h_a06fc87d81c62e9abb8790b6e5713c55ba9ac7d5e5851d7a2bc186a1c3341589f6}\label{function_8h_a06fc87d81c62e9abb8790b6e5713c55ba9ac7d5e5851d7a2bc186a1c3341589f6} 
+WATER&Represents water cell \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WATER\_SHOT@{WATER\_SHOT}!function.h@{function.h}}\index{function.h@{function.h}!WATER\_SHOT@{WATER\_SHOT}}}\Hypertarget{function_8h_a06fc87d81c62e9abb8790b6e5713c55bae8af2ae3ffe833ed5371a22f29a0646b}\label{function_8h_a06fc87d81c62e9abb8790b6e5713c55bae8af2ae3ffe833ed5371a22f29a0646b} 
+WATER\+\_\+\+SHOT&Represents water cell that\textquotesingle{}s been shot at \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BOAT@{BOAT}!function.h@{function.h}}\index{function.h@{function.h}!BOAT@{BOAT}}}\Hypertarget{function_8h_a06fc87d81c62e9abb8790b6e5713c55ba5fcfdc36f4798fb6ace9348a10f1e1b3}\label{function_8h_a06fc87d81c62e9abb8790b6e5713c55ba5fcfdc36f4798fb6ace9348a10f1e1b3} 
+BOAT&Represents a cell occupied by a boat \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRECK@{WRECK}!function.h@{function.h}}\index{function.h@{function.h}!WRECK@{WRECK}}}\Hypertarget{function_8h_a06fc87d81c62e9abb8790b6e5713c55ba6589b5d605e0a15fa3323937132bfa61}\label{function_8h_a06fc87d81c62e9abb8790b6e5713c55ba6589b5d605e0a15fa3323937132bfa61} 
+WRECK&Represents a wrecked part of a boat \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{function_8h_acd05d28250a469871b95cee8412ad55a}\label{function_8h_acd05d28250a469871b95cee8412ad55a} 
+\index{function.h@{function.h}!display\_alive@{display\_alive}}
+\index{display\_alive@{display\_alive}!function.h@{function.h}}
+\doxysubsubsection{\texorpdfstring{display\_alive()}{display\_alive()}}
+{\footnotesize\ttfamily int display\+\_\+alive (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}}]{boat1,  }\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{board1 }\end{DoxyParamCaption})}
+
+
+
+the display alive function 
+
+it aims to show and return if a bot a bot is wreck or it is destroyed \Hypertarget{function_8h_a35088d9e5a1e54a5cb136a124c9fef49}\label{function_8h_a35088d9e5a1e54a5cb136a124c9fef49} 
+\index{function.h@{function.h}!display\_tab@{display\_tab}}
+\index{display\_tab@{display\_tab}!function.h@{function.h}}
+\doxysubsubsection{\texorpdfstring{display\_tab()}{display\_tab()}}
+{\footnotesize\ttfamily void display\+\_\+tab (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+the display tab function 
+
+it aims todisplay all the ennemy that without his boats and with colors \Hypertarget{function_8h_a6638267d9b0be9278fa1db17075fc244}\label{function_8h_a6638267d9b0be9278fa1db17075fc244} 
+\index{function.h@{function.h}!display\_your\_tab@{display\_your\_tab}}
+\index{display\_your\_tab@{display\_your\_tab}!function.h@{function.h}}
+\doxysubsubsection{\texorpdfstring{display\_your\_tab()}{display\_your\_tab()}}
+{\footnotesize\ttfamily void display\+\_\+your\+\_\+tab (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+the display your tab function 
+
+it aims to display your tab complete with different color ~\newline
+ \Hypertarget{function_8h_abd9967f03aabbbfe8ac6edcf0dacdfef}\label{function_8h_abd9967f03aabbbfe8ac6edcf0dacdfef} 
+\index{function.h@{function.h}!init\_Boat@{init\_Boat}}
+\index{init\_Boat@{init\_Boat}!function.h@{function.h}}
+\doxysubsubsection{\texorpdfstring{init\_Boat()}{init\_Boat()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*} init\+\_\+\+Boat (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde }\end{DoxyParamCaption})}
+
+
+
+help the user to initialize his boat and put it on his grid 
+
+with conditions ~\newline
+ \Hypertarget{function_8h_a457e853d3a6132e2bbcc7f93e6f86b92}\label{function_8h_a457e853d3a6132e2bbcc7f93e6f86b92} 
+\index{function.h@{function.h}!init\_Boat\_ordi@{init\_Boat\_ordi}}
+\index{init\_Boat\_ordi@{init\_Boat\_ordi}!function.h@{function.h}}
+\doxysubsubsection{\texorpdfstring{init\_Boat\_ordi()}{init\_Boat\_ordi()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*} init\+\_\+\+Boat\+\_\+ordi (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde }\end{DoxyParamCaption})}
+
+
+
+Represents the computer\textquotesingle{}s action of shooting at the player\textquotesingle{}s grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gridde} & A pointer to the player\textquotesingle{}s game grid. \\
+\hline
+{\em x} & The x dimension of the player\textquotesingle{}s game grid. \\
+\hline
+{\em y} & The y dimension of the player\textquotesingle{}s game grid.\\
+\hline
+\end{DoxyParams}
+This function allows the computer to randomly choose a cell in the player\textquotesingle{}s grid to shoot at, marking it appropriately. \Hypertarget{function_8h_adaec144e803bf256186921b2a8069f7c}\label{function_8h_adaec144e803bf256186921b2a8069f7c} 
+\index{function.h@{function.h}!iscollision\_ordi@{iscollision\_ordi}}
+\index{iscollision\_ordi@{iscollision\_ordi}!function.h@{function.h}}
+\doxysubsubsection{\texorpdfstring{iscollision\_ordi()}{iscollision\_ordi()}}
+{\footnotesize\ttfamily int iscollision\+\_\+ordi (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}}]{boatt,  }\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde }\end{DoxyParamCaption})}
+
+
+
+Tell if there is a collision ( without printf for user experience ) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gridde} & A pointer to the player\textquotesingle{}s game grid. \\
+\hline
+{\em boatt} & boatt A pointer to the player\textquotesingle{}s boatts list.\\
+\hline
+\end{DoxyParams}
+permits to the computze to put well its piece \Hypertarget{function_8h_a988b2c80dc83f2e3c76e84a8a9b2313a}\label{function_8h_a988b2c80dc83f2e3c76e84a8a9b2313a} 
+\index{function.h@{function.h}!menu\_global@{menu\_global}}
+\index{menu\_global@{menu\_global}!function.h@{function.h}}
+\doxysubsubsection{\texorpdfstring{menu\_global()}{menu\_global()}}
+{\footnotesize\ttfamily void menu\+\_\+global (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The global menu for the game. 
+
+This function serves as the central hub for the game, allowing the user to\+:
+\begin{DoxyItemize}
+\item Play the game,
+\item Create boats and place them on the board,
+\item Shoot at the enemy,
+\item Make the computer take its turn,
+\item Declare the winner.
+\end{DoxyItemize}
+
+It manages game flow, including initializing game structures, taking user input for game options, and handling the main game loop until a winner is declared. \Hypertarget{function_8h_a9210d364a791c60eff2e9e012a6d64e1}\label{function_8h_a9210d364a791c60eff2e9e012a6d64e1} 
+\index{function.h@{function.h}!put\_In@{put\_In}}
+\index{put\_In@{put\_In}!function.h@{function.h}}
+\doxysubsubsection{\texorpdfstring{put\_In()}{put\_In()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*} put\+\_\+\+In (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}}]{boatt,  }\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde }\end{DoxyParamCaption})}
+
+
+
+the put in function 
+
+this function aims to put a new boat in the user grid ~\newline
+ \Hypertarget{function_8h_ae9ce9e2b9b0e3ef9a9e3256a73cf5d9a}\label{function_8h_ae9ce9e2b9b0e3ef9a9e3256a73cf5d9a} 
+\index{function.h@{function.h}!see\_winner@{see\_winner}}
+\index{see\_winner@{see\_winner}!function.h@{function.h}}
+\doxysubsubsection{\texorpdfstring{see\_winner()}{see\_winner()}}
+{\footnotesize\ttfamily int see\+\_\+winner (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+the winner function 
+
+it counts the wreck cell and if it is equal to 15 return 1 that means the user win \Hypertarget{function_8h_a4cd598d8595dc90e0bf2e6ec24b9f2dc}\label{function_8h_a4cd598d8595dc90e0bf2e6ec24b9f2dc} 
+\index{function.h@{function.h}!shoot@{shoot}}
+\index{shoot@{shoot}!function.h@{function.h}}
+\doxysubsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void shoot (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+the shoot function 
+
+it aims to make the user choose the cell where he will shoot with condition ( he cant shoot where he shoots before and cant shoot out of the grid) \Hypertarget{function_8h_addceef65115ccc8bc375cfae8029f853}\label{function_8h_addceef65115ccc8bc375cfae8029f853} 
+\index{function.h@{function.h}!shoot\_ordi@{shoot\_ordi}}
+\index{shoot\_ordi@{shoot\_ordi}!function.h@{function.h}}
+\doxysubsubsection{\texorpdfstring{shoot\_ordi()}{shoot\_ordi()}}
+{\footnotesize\ttfamily void shoot\+\_\+ordi (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Make the computer in a grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gridde} & A pointer to the player\textquotesingle{}s game grid. \\
+\hline
+{\em x} & The x dimension of the player\textquotesingle{}s game grid. \\
+\hline
+{\em y} & The y dimension of the player\textquotesingle{}s game grid.\\
+\hline
+\end{DoxyParams}
+this function make the computer dont shoot at the same place that it shoots before 

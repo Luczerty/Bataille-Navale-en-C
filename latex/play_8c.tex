@@ -1,0 +1,158 @@
+\doxysection{play.\+c File Reference}
+\hypertarget{play_8c}{}\label{play_8c}\index{play.c@{play.c}}
+{\ttfamily \#include "{}function.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{play_8c_acd05d28250a469871b95cee8412ad55a}{display\+\_\+alive}} (struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boat1, struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}board1)
+\begin{DoxyCompactList}\small\item\em the display alive function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{play_8c_a22d7c3e857afba4903a76181f91ea9fb}{clear\+Input\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Clears the input buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{play_8c_a35088d9e5a1e54a5cb136a124c9fef49}{display\+\_\+tab}} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde, int x, int y)
+\begin{DoxyCompactList}\small\item\em the display tab function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{play_8c_a6638267d9b0be9278fa1db17075fc244}{display\+\_\+your\+\_\+tab}} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde, int x, int y)
+\begin{DoxyCompactList}\small\item\em the display your tab function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{play_8c_a4cd598d8595dc90e0bf2e6ec24b9f2dc}{shoot}} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde, int x, int y)
+\begin{DoxyCompactList}\small\item\em the shoot function \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{play_8c_ae9ce9e2b9b0e3ef9a9e3256a73cf5d9a}{see\+\_\+winner}} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde, int x, int y)
+\begin{DoxyCompactList}\small\item\em the winner function \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{play_8c_a9210d364a791c60eff2e9e012a6d64e1}{put\+\_\+\+In}} (struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boatt, struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde)
+\begin{DoxyCompactList}\small\item\em the put in function \end{DoxyCompactList}\item 
+\Hypertarget{play_8c_abdbc59fbbde3991fed5406434e2efa55}\label{play_8c_abdbc59fbbde3991fed5406434e2efa55} 
+void {\bfseries choosetoseewreck} (struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boat1, struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}board1)
+\begin{DoxyCompactList}\small\item\em tthis is the menu to see if a bot is wreck \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{play_8c_abd9967f03aabbbfe8ac6edcf0dacdfef}{init\+\_\+\+Boat}} (int x, int y, struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde)
+\begin{DoxyCompactList}\small\item\em help the user to initialize his boat and put it on his grid \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{play_8c_a988b2c80dc83f2e3c76e84a8a9b2313a}{menu\+\_\+global}} ()
+\begin{DoxyCompactList}\small\item\em The global menu for the game. \end{DoxyCompactList}\item 
+\Hypertarget{play_8c_ae0f509750b649d6a4b242c18a65f763d}\label{play_8c_ae0f509750b649d6a4b242c18a65f763d} 
+void {\bfseries free\+\_\+memory} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}board, struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boats)
+\item 
+\Hypertarget{play_8c_a6f52ea7b6984181a6490b8f57209d99a}\label{play_8c_a6f52ea7b6984181a6490b8f57209d99a} 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+board} (int x, int y)
+\item 
+\Hypertarget{play_8c_add386c8523efc40708c5e242e3087c37}\label{play_8c_add386c8523efc40708c5e242e3087c37} 
+int {\bfseries is\+Victory} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde, int x, int y)
+\item 
+\Hypertarget{play_8c_aa85c234c4baee98f22a86f1bcfefe775}\label{play_8c_aa85c234c4baee98f22a86f1bcfefe775} 
+void {\bfseries free\+\_\+grid} (struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}board)
+\item 
+\Hypertarget{play_8c_abf8a4d1584b097c34ef8f18ed14dd04a}\label{play_8c_abf8a4d1584b097c34ef8f18ed14dd04a} 
+int {\bfseries iscollision} (struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boatt, struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}gridde)
+\item 
+\Hypertarget{play_8c_a5177aa67213841744dc665d8098e987b}\label{play_8c_a5177aa67213841744dc665d8098e987b} 
+void {\bfseries display\+\_\+boat} (struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boatt)
+\begin{DoxyCompactList}\small\item\em display a list formatted of your boats this function help me to see the problems \end{DoxyCompactList}\item 
+\Hypertarget{play_8c_a3d62ac1d41fa2ebffbac1aad22f7aa7d}\label{play_8c_a3d62ac1d41fa2ebffbac1aad22f7aa7d} 
+void {\bfseries free\+\_\+boats} (struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}boatt)
+\begin{DoxyCompactList}\small\item\em function that permit to secure the memory \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+principal file of the program @\+Author Lucas Bezamat 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{play_8c_a22d7c3e857afba4903a76181f91ea9fb}\label{play_8c_a22d7c3e857afba4903a76181f91ea9fb} 
+\index{play.c@{play.c}!clearInputBuffer@{clearInputBuffer}}
+\index{clearInputBuffer@{clearInputBuffer}!play.c@{play.c}}
+\doxysubsubsection{\texorpdfstring{clearInputBuffer()}{clearInputBuffer()}}
+{\footnotesize\ttfamily void clear\+Input\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the input buffer. 
+
+This function reads characters from the input buffer until a newline (\textquotesingle{}~\newline
+\textquotesingle{}) We aim to delete all miss or intentional problematic input that can perturb all the program \Hypertarget{play_8c_acd05d28250a469871b95cee8412ad55a}\label{play_8c_acd05d28250a469871b95cee8412ad55a} 
+\index{play.c@{play.c}!display\_alive@{display\_alive}}
+\index{display\_alive@{display\_alive}!play.c@{play.c}}
+\doxysubsubsection{\texorpdfstring{display\_alive()}{display\_alive()}}
+{\footnotesize\ttfamily int display\+\_\+alive (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}}]{boat1,  }\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{board1 }\end{DoxyParamCaption})}
+
+
+
+the display alive function 
+
+it aims to show and return if a bot a bot is wreck or it is destroyed \Hypertarget{play_8c_a35088d9e5a1e54a5cb136a124c9fef49}\label{play_8c_a35088d9e5a1e54a5cb136a124c9fef49} 
+\index{play.c@{play.c}!display\_tab@{display\_tab}}
+\index{display\_tab@{display\_tab}!play.c@{play.c}}
+\doxysubsubsection{\texorpdfstring{display\_tab()}{display\_tab()}}
+{\footnotesize\ttfamily void display\+\_\+tab (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+the display tab function 
+
+it aims todisplay all the ennemy that without his boats and with colors \Hypertarget{play_8c_a6638267d9b0be9278fa1db17075fc244}\label{play_8c_a6638267d9b0be9278fa1db17075fc244} 
+\index{play.c@{play.c}!display\_your\_tab@{display\_your\_tab}}
+\index{display\_your\_tab@{display\_your\_tab}!play.c@{play.c}}
+\doxysubsubsection{\texorpdfstring{display\_your\_tab()}{display\_your\_tab()}}
+{\footnotesize\ttfamily void display\+\_\+your\+\_\+tab (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+the display your tab function 
+
+it aims to display your tab complete with different color ~\newline
+ \Hypertarget{play_8c_abd9967f03aabbbfe8ac6edcf0dacdfef}\label{play_8c_abd9967f03aabbbfe8ac6edcf0dacdfef} 
+\index{play.c@{play.c}!init\_Boat@{init\_Boat}}
+\index{init\_Boat@{init\_Boat}!play.c@{play.c}}
+\doxysubsubsection{\texorpdfstring{init\_Boat()}{init\_Boat()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*} init\+\_\+\+Boat (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde }\end{DoxyParamCaption})}
+
+
+
+help the user to initialize his boat and put it on his grid 
+
+with conditions ~\newline
+ \Hypertarget{play_8c_a988b2c80dc83f2e3c76e84a8a9b2313a}\label{play_8c_a988b2c80dc83f2e3c76e84a8a9b2313a} 
+\index{play.c@{play.c}!menu\_global@{menu\_global}}
+\index{menu\_global@{menu\_global}!play.c@{play.c}}
+\doxysubsubsection{\texorpdfstring{menu\_global()}{menu\_global()}}
+{\footnotesize\ttfamily void menu\+\_\+global (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The global menu for the game. 
+
+This function serves as the central hub for the game, allowing the user to\+:
+\begin{DoxyItemize}
+\item Play the game,
+\item Create boats and place them on the board,
+\item Shoot at the enemy,
+\item Make the computer take its turn,
+\item Declare the winner.
+\end{DoxyItemize}
+
+It manages game flow, including initializing game structures, taking user input for game options, and handling the main game loop until a winner is declared. \Hypertarget{play_8c_a9210d364a791c60eff2e9e012a6d64e1}\label{play_8c_a9210d364a791c60eff2e9e012a6d64e1} 
+\index{play.c@{play.c}!put\_In@{put\_In}}
+\index{put\_In@{put\_In}!play.c@{play.c}}
+\doxysubsubsection{\texorpdfstring{put\_In()}{put\_In()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*} put\+\_\+\+In (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structboat}{boat}} \texorpdfstring{$\ast$}{*}}]{boatt,  }\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde }\end{DoxyParamCaption})}
+
+
+
+the put in function 
+
+this function aims to put a new boat in the user grid ~\newline
+ \Hypertarget{play_8c_ae9ce9e2b9b0e3ef9a9e3256a73cf5d9a}\label{play_8c_ae9ce9e2b9b0e3ef9a9e3256a73cf5d9a} 
+\index{play.c@{play.c}!see\_winner@{see\_winner}}
+\index{see\_winner@{see\_winner}!play.c@{play.c}}
+\doxysubsubsection{\texorpdfstring{see\_winner()}{see\_winner()}}
+{\footnotesize\ttfamily int see\+\_\+winner (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+the winner function 
+
+it counts the wreck cell and if it is equal to 15 return 1 that means the user win \Hypertarget{play_8c_a4cd598d8595dc90e0bf2e6ec24b9f2dc}\label{play_8c_a4cd598d8595dc90e0bf2e6ec24b9f2dc} 
+\index{play.c@{play.c}!shoot@{shoot}}
+\index{shoot@{shoot}!play.c@{play.c}}
+\doxysubsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void shoot (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structgrid}{grid}} \texorpdfstring{$\ast$}{*}}]{gridde,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+the shoot function 
+
+it aims to make the user choose the cell where he will shoot with condition ( he cant shoot where he shoots before and cant shoot out of the grid) 
