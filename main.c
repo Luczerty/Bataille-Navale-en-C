@@ -21,7 +21,7 @@
  * - Dynamic memory management
  * - Modular programming with multiple files
  * - Random computer moves
- * - Simple console-based UI
+ * - Simple console-based UI a
  * 
  * @section how_to_play_sec How to Play
  * - Compile the code using the Makefile.
